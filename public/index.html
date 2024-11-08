@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/styles/normalize.css" />
+        <link rel="stylesheet" href="/src/styles/landing.css" />
+
+        <!-- Preconexión a Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Fuentes de Google: Montserrat y Roboto -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Panadería MC</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__logo">
+                <img
+                    src="/public/images/logotipo.jpg"
+                    alt="Logotipo de Panadería MC"
+                />
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/" class="header__nav-link">Inicio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/productos" class="header__nav-link"
+                            >Productos</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/servicios" class="header__nav-link"
+                            >Servicios</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/servicios" class="header__nav-link"
+                            >Horarios</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/servicios" class="header__nav-link"
+                            >Preguntas</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a
+                            href="/iniciar-sesion"
+                            class="header__nav-link header__nav-link--login"
+                        >
+                            <img
+                                src="/public/images/login.svg"
+                                alt="Iniciar sesión"
+                                class="header__nav-icon header__nav-icon--login"
+                            />
+                            Iniciar sesión
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a
+                            href="/crear-cuenta"
+                            class="header__nav-link header__nav-link--cuenta"
+                            >Crear cuenta</a
+                        >
+                    </li>
+                    <li class="header__nav-item header__nav-socials">
+                        <a
+                            href="https://www.tiktok.com/@panaderiamc"
+                            class="header__nav-social-link"
+                            target="_blank"
+                        >
+                            <img
+                                src="/public/images/tiktok.svg"
+                                alt="TikTok"
+                                class="header__nav-social-icon"
+                            />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/panaderiamc"
+                            class="header__nav-social-link"
+                            target="_blank"
+                        >
+                            <img
+                                src="/public/images/facebok-icon.svg"
+                                alt="Facebook"
+                                class="header__nav-social-icon"
+                            />
+                        </a>
+                    </li>
+                </ul>
+                <img
+                    src="/public/images/cerrarMenu.svg"
+                    alt="Cerrar menú"
+                    class="header__nav-close"
+                />
+            </nav>
+            <img
+                src="/public/images/abrirMenu.svg"
+                alt="Abrir menú"
+                class="header__nav-open"
+            />
+        </header>
+
+        <script src="/src/scripts/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+/* src/styles/header.css */
+
+/* Estilos generales del header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 3.75rem; /* 60px en rem */
+    box-shadow: 0px 4px 8px var(--color-shadow-header);
+}
+
+/* Estilo para el logotipo */
+.header__logo img {
+    height: 2.5rem;
+    width: auto;
+}
+
+/* Estilo para el ícono del menú */
+.header__menu-icon img {
+    height: 2.5rem;
+    width: auto;
+    cursor: pointer;
+}
+
+.header__nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: left 0.4s ease-in-out;
+    background-image: url("/public/images/imgMenuMobile.JPG");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header__nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.header__nav-list {
+    height: 80%;
+    width: 60%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__nav-item {
+    font-family: var(--titulos-montserrat);
+    font-weight: 500;
+    color: var(--color-background);
+    z-index: 2;
+}
+
+.header__nav-link--login {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: solid 1px var(--color-primary);
+}
+.header__nav-icon--login {
+    margin-right: 4px;
+}
+
+.header__nav-link--cuenta {
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.header__nav-socials {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.header__nav-social-icon {
+    width: 2.3rem;
+    margin-top: 1rem;
+}
+.header__nav-open {
+    width: 2rem;
+    cursor: pointer;
+}
+
+/* estilos para la X de cerrar menu */
+.header__nav-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    width: 2rem;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.header__nav-visible {
+    left: 0;
+}

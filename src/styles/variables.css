@@ -1,0 +1,27 @@
+/*variables de color*/
+:root {
+    --color-primary: #ff6600;
+    --color-background: #f0f2f5;
+    --color-text: #333333;
+    --color-shadow-header: #c9c9c9;
+    /* Colores Secundarios */
+    --color-secondary: #ff9900; /* Naranja más suave para elementos secundarios */
+    --color-accent: #ffb84d; /* Naranja más claro para detalles y hover */
+
+    /* Colores Neutrales */
+    --color-light: #ffffff; /* Blanco para fondos de contenido o tarjetas */
+    --color-dark: #1a1a1a; /* Color oscuro para texto secundario o encabezados */
+    --color-gray: #cccccc; /* Gris claro para bordes y separadores */
+
+    /* Colores para Interacción */
+    --color-success: #28a745; /* Verde para mensajes de éxito o botones de acción */
+    --color-error: #dc3545; /* Rojo para errores o alertas */
+    --color-warning: #ffc107; /* Amarillo para advertencias */
+    --color-info: #17a2b8; /* Azul para mensajes informativos */
+}
+
+/* variables de fuentes */
+:root {
+    --titulos-montserrat: "Montserrat", sans-serif;
+    --texto-normal: "Roboto", sans-serif;
+}

@@ -1,0 +1,11 @@
+
+/* Importación de variables de colores y fuentes */
+@import "variables.css";
+
+/* importación del HEADER */
+@import "header.css";
+
+body{
+    background-color: var(--color-background);
+}
+
